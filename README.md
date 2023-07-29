@@ -2,11 +2,11 @@
 
 The given Python code is a script that converts data from a CSV (Comma-Separated Values) file to a JSON (JavaScript Object Notation) file. It defines a function `csv_to_json` that takes two file paths as input parameters: `csvFilePath` for the CSV file and `jsonFilePath` for the JSON file. It reads the data from the CSV file, converts it to a list of dictionaries, and then writes the data as a JSON object to the specified JSON file.
 
-Let's break down the code step by step:
+**Let's break down the code step by step:**
 
 The script imports the required modules `csv` and `json`.
 
-The `csv_to_json` function is defined, which takes two parameters: csvFilePath (path to the CSV file) and jsonFilePath (path to the JSON file).
+The `csv_to_json` function is defined, which takes two parameters: csvFilePath (path to the CSV file) and `jsonFilePath` (path to the JSON file).
 
 Inside the function, a list called data is initialized. This list will store dictionaries representing each row of data from the CSV file.
 
@@ -30,4 +30,5 @@ Finally, the function ends, and the script calls the `csv_to_json` function with
 
 The paths for the CSV and JSON files are specified using raw string literals (prefixed with r). Raw string literals treat backslashes as literal characters, which is useful for file paths on various platforms.
 
+### execute the conversion
 To use this script, you need to have a CSV file (`data.csv`) with comma-separated values and run the script with Python. The script will read the data from the CSV file, convert it to JSON format, and write it to a new JSON file (`data.json`) in the same directory. The resulting JSON file will contain an array of dictionaries, where each dictionary represents a row from the original CSV file, with keys corresponding to the column headers and values corresponding to the data in each row.
